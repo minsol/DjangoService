@@ -20,4 +20,5 @@ from django.urls import path
 urlpatterns = [
     path('admin/', admin.site.urls),
     url(r'^request', include('DjangoService.getAndPost.urls')),
+    path('', include('api.urls')),    #添加的路由地址
 ]
